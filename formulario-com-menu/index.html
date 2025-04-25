@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+    <title>menu</title>
+</head>
+
+<body>
+    <main>
+        <div class="menu">
+            <a href="#" id="agenda"><i class='bx bx-calendar'></i></a>
+            <a href="#" id="looker"><i class='bx bx-data'></i></a>
+            <a href="#" id="notion"><i class='bx bxs-edit'></i></a>
+            <a href="#" id="sair"><i class='bx bx-exit'></i></a>
+        </div>
+
+        <div class="formulario">
+            <form class="form" action="proc_form.php" method="POST">
+                <h6>
+                    Olá,
+                    <?php echo '<font color="#AFA">'.$logado.'</font>'; ?>
+                </h6>
+                <h4>Formulário:</h4>
+                <div>
+                    <label for="floatingInput">Evento</label>
+                    <input type="text" name="evento" id="floatingInput" class="form-control" placeholder="Evento"
+                        required>
+                </div>
+
+                <div>
+                    <label for="floatingInput">Nome</label>
+                    <input type="text" name="nome" id="floatingInput" class="form-control" placeholder="Nome" required>
+                </div>
+
+                <div>
+                    <label for="floatingInput">Setor</label>
+                    <input type="text" name="setor" id="floatingInput" class="form-control" placeholder="Setor"
+                        required>
+                </div>
+
+                <div>
+                    <label for="floatingInput">Ramal</label>
+                    <input type="tel" pattern="[0-9][0-9][0-9][0-9]" name="ramal" id="floatingInput"
+                        class="form-control" placeholder="Ramal" required>
+                </div>
+
+                <div>
+                    <label for="floatingInput">E-mail</label>
+                    <input type="email" name="email" id="floatingInput" class="form-control" placeholder="E-mail"
+                        required>
+                </div>
+
+                <label for="floatingInput">Data Inicio</label>
+                <input type="date" name="datainicio" id="floatingInput" class="form-control" placeholder="Data Inicio"
+                    required>
+
+                <label for="floatingInput">Data Fim</label>
+                <input type="date" name="datafim" id="floatingInput" class="form-control" placeholder="Data Fim"
+                    required>
+
+                <label for="floatingInput">Horario Inicio</label>
+                <input type="time" name="horarioinicio" id="floatingInput" class="form-control"
+                    placeholder="Horario Inicio" required>
+
+                <label for="floatingInput">Horario Fim</label>
+                <input type="time" name="horariofim" id="floatingInput" class="form-control"
+                    placeholder="Horario Inicio" required>
+
+                <h5>Local:</h5>
+
+                <input class="form-check-input" type="radio" name="sala" id="inlineRadio1" value="Sala 1">
+                <label class="form-check-label" for="inlineRadio1">Sala 1</label>
+
+                <input class="form-check-input" type="radio" name="sala" id="inlineRadio2" value="Sala 2">
+                <label class="form-check-label" for="inlineRadio2">Sala 2</label>
+
+                <input class="form-check-input" type="radio" name="sala" id="inlineRadio3" value="Sala 3">
+                <label class="form-check-label" for="inlineRadio3">Sala 3</label>
+
+                <input class="form-check-input" type="radio" name="sala" id="inlineRadio4" value="Sala 4">
+                <label class="form-check-label" for="inlineRadio4">Sala 4</label>
+
+                <input class="form-check-input" type="radio" name="sala" id="inlineRadio5" value="Sala 5">
+                <label class="form-check-label" for="inlineRadio5">Sala 5</label>
+
+                <input class="form-check-input" type="radio" name="sala" id="inlineRadio6" value="Professores">
+                <label class="form-check-label" for="inlineRadio6">Professores</label>
+
+                <input class="form-check-input" type="radio" name="sala" id="inlineRadio7" value="Auditório">
+                <label class="form-check-label" for="inlineRadio7">Auditório</label>
+
+                <h5>Kit Multimidia</h5>
+                <input class="form-check-input" type="radio" name="kit" value="Sim" id="kitS">
+                <label class="form-check-label" for="kitS">Sim</label>
+
+                <input class="form-check-input" type="radio" name="kit" value="Não" id="kitN">
+                <label class="form-check-label" for="kitN">Não</label>
+
+                <h5>Microfone</h5>
+                <input class="form-check-input" type="radio" name="mic" value="Sim" id="micS">
+                <label class="form-check-label" for="micS">Sim</label>
+
+                <input class="form-check-input" type="radio" name="mic" value="Não" id="micN">
+                <label class="form-check-label" for="micN">Não</label>
+
+                <label for="floatingInput">Participante</label>
+                <input type="number" name="participantes" id="floatingInput" class="form-control"
+                    placeholder="Participantes" required>
+
+                <label for="floatingInput">Copa</label>
+                <input type="text" name="copa" id="floatingInput" class="form-control" placeholder="Copa" required>
+
+                <input type="text" name="observacoes" id="floatingInput" class="form-control" placeholder="Observações"
+                    required>
+                <label for="floatingInput">Observações</label>
+
+                <button class="enviar" type="submit">Enviar</button>
+
+                <button class="limpar" type="reset">Limpar</button>
+
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

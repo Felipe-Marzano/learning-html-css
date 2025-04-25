@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-display: swap;
+    background: linear-gradient(320deg, rgba(19, 19, 19, 1) 25%, rgba(5, 5, 5, 1) 50%, rgba(19, 19, 19, 1) 75%);
+    height: inherit;
+    justify-content: center;
+}
+
+.wrapper {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(33, 33, 33, 0.75);
+    border: rgba(86, 255, 131, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(86, 255, 131, 0.2);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(33, 33, 33, 0.30);
+    border: 1px solid rgba(86, 255, 131, 0.34);
+    flex-basis: 400px;
+    height: fit-content;
+    padding: 20px 35px;
+}
+
+.wrapper h2 {
+    color: rgba(86, 255, 131, 0.5);
+    justify-self: center;
+}
+
+.wrapper input {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid rgba(86, 255, 131, 0.34);
+    margin: 10px 0;
+    color: #56ff83;
+}
+
+.wrapper input::placeholder {
+    color: rgba(86, 255, 131, 0.5);
+}
+
+.wrapper button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid rgba(86, 255, 131, 0.34);
+    font-weight: 500;
+    margin: 10px 0;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+    color: #56ff83;
+}
+
+.wrapper button:hover {
+    background: linear-gradient(to right, #56ff83, #00d0ff);
+    color: #000;
+}

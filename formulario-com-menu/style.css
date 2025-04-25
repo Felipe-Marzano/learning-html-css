@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+    font-weight: 500;
+}
+
+body {
+    background-color: #272838;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.menu {
+    background-color: #FFFAFF;
+    color: #272838;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40vw;
+}
+
+.menu a:hover {
+    transform: scale(1.2);
+    color: #56ff83;
+}
+
+.menu a {
+    font-size: 62px;
+    color: #281c1f;
+}
+
+.formulario {
+    background-color: #FFFAFF;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    border-radius: 10px;
+    width: 40vw;
+    margin-top: 10px;
+}
+
+.formulario .form-control {
+    display: flex;
+    flex-direction: column;
+    border-radius: none;
+    width: 25vw;
+    height: 25px;
+}
+
+.formulario .enviar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    height: 25px;
+}
+
+.formulario .enviar:hover {
+    background: #56ff83;
+}
+
+.formulario .limpar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    height: 25px;
+}
+
+.formulario .limpar:hover {
+    background: #56ff83;
+}
+
+.formulario h4 {
+    font-size: 22px;
+    color: #272838;
+}
+
+.formulario h5 {
+    font-size: 18px;
+    color: #272838;
+}
+
+.formulario h6 {
+    font-size: 14px;
+    color: #272838;
+}
